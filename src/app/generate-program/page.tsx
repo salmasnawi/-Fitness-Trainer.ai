@@ -108,7 +108,7 @@ const GenerateProgramPage = () => {
           : "there, may I know your name?";
 
         await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
-          firstMessage: `Hello ${fullName}, I'm your smart fitness assistant. I'm here to help you build a workout plan tailored just for you. Before we start, what's your name?`,
+          firstMessage: `Hello ${fullName}, I'm your smart fitness assistant. I'm here to help you build a workout plan tailored just for you. Before we start, what's your current weight and your age and tell me your fitness goal so i can help you to start?`,
           variableValues: { user_name: fullName, user_id: user?.id },
         });
       } catch (error) {
